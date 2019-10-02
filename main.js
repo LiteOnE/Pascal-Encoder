@@ -1,6 +1,12 @@
 $(() => {
     $('#encode-btn').click(() => {
-        var sourceText = $('#source-text').text();
-        console.log(sourceText);
+        var sourceText = $('#source-text').val();
+        var encodedText = '';
+
+        var sourceLen = sourceText.length;
+
+        for (var c in sourceText) {
+            encodedText = c ^ sourceLen;
+        }
     })
 });
