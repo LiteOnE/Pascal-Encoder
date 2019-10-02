@@ -1,0 +1,59 @@
+body{
+    background: black;
+    margin:10px;
+    font-family: Consolas;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+.param{
+    color: green;
+    background: black;
+    font-family: Consolas;
+    font-size: 1.5rem;
+    margin: 10px 10px 10px 0;
+}
+
+[type=checkbox]{
+    margin-right: 10px;
+    /* border-width: 20px; */
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    margin: 10px 0 10px 0;
+    color: green;
+    background: black;
+    border-width: 1px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #101010
+}
+
+button#encode-btn{
+    background:#aa0000;
+    color:white;
+}
+
+button#encode-btn:hover{
+    background: #300000
+}
+
+textarea{
+    background: black;
+    color: green;
+    font-family: Consolas;
+    display:block;
+    height: 20vh;
+    width: calc(100vw - 20px);
+    resize: none;
+    font-size: 2rem;
+}
