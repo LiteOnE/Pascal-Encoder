@@ -9,6 +9,6 @@ $(() => {
             encodedText += c ^ sourceLen;
         }
 
-        $('encoded-text').val(encodedText);
+        $('#encoded-text').val(encodedText);
     })
 });
