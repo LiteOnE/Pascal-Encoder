@@ -5,8 +5,8 @@ $(() => {
 
         var sourceLen = sourceText.length;
 
-        for (var c of sourceText) {
-            encodedText += c ^ sourceLen;
+        for (var i in sourceText) {
+            encodedText += String.charCodeAt(sourceText.charCodeAt(i) ^ (sourceLen + i % 255));
         }
 
         $('#encoded-text').val(encodedText);
