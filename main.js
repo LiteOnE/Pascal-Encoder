@@ -8,5 +8,7 @@ $(() => {
         for (var c in sourceText) {
             encodedText = c ^ sourceLen;
         }
+
+        $('encoded-text').val(encodedText);
     })
 });
