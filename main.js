@@ -5,8 +5,8 @@ $(() => {
 
         var sourceLen = sourceText.length;
 
-        for (var c in sourceText) {
-            encodedText = c ^ sourceLen;
+        for (var c of sourceText) {
+            encodedText += c ^ sourceLen;
         }
 
         $('encoded-text').val(encodedText);
